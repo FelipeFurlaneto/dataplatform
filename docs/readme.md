@@ -24,37 +24,38 @@ It should run in an Oracle Cloud as it has a better experience for free users. B
 ---
 
 ## Folder Layout
-
+```
 data-platform/
-├── infra/ # Core infrastructure and configuration
-│ ├── terraform/ # Cluster, networking, and storage definitions
-│ ├── vault/ # Secrets and policies
-│ ├── prometheus/ # Monitoring configs and alert rules
-│ ├── grafana/ # Dashboards and datasources
-│ └── docker-registry/ # Container registry configs
+├── infra/                # Core infrastructure and configuration
+│   ├── terraform/        # Cluster, networking, and storage definitions
+│   ├── vault/            # Secrets and policies
+│   ├── prometheus/       # Monitoring configs and alert rules
+│   ├── grafana/          # Dashboards and datasources
+│   └── docker-registry/  # Container registry configs
 │
-├── apps/ # Microservices and platform apps
-│ ├── airflow/ # Airflow deployment (DAGs repo separate)
-│ ├── spark/ # Spark jobs, configs, Dockerfile
-│ ├── mlflow/ # MLflow service configs
-│ ├── feast/ # Feature store configs
-│ ├── seldon/ # Model serving configs
-│ ├── fastapi/ # Backend APIs
-│ └── kafka/ # Kafka brokers, connectors, configs
+├── apps/                 # Microservices and platform apps
+│   ├── airflow/          # Airflow deployment (DAGs repo separate)
+│   ├── spark/            # Spark jobs, configs, Dockerfile
+│   ├── mlflow/           # MLflow service configs
+│   ├── feast/            # Feature store configs
+│   ├── seldon/           # Model serving configs
+│   ├── fastapi/          # Backend APIs
+│   └── kafka/            # Kafka brokers, connectors, configs
 │
-├── argocd/ # GitOps setup: ArgoCD projects and apps
-│ ├── projects/ # ArgoCD project definitions
-│ └── apps/ # YAMLs pointing to app manifests
-│ ├── airflow.yaml
-│ ├── spark.yaml
-│ ├── mlflow.yaml
-│ ├── feast.yaml
-│ ├── seldon.yaml
-│ ├── fastapi.yaml
-│ └── kafka.yaml
+├── argocd/               # GitOps setup: ArgoCD projects and apps
+│   ├── projects/         # ArgoCD project definitions
+│   └── apps/             # YAMLs pointing to app manifests
+│       ├── airflow.yaml
+│       ├── spark.yaml
+│       ├── mlflow.yaml
+│       ├── feast.yaml
+│       ├── seldon.yaml
+│       ├── fastapi.yaml
+│       └── kafka.yaml
 │
-├── docs/ # Documentation
-└── scripts/ # Helper scripts for initializing infra, CI/CD, etc.
+├── docs/                 # Documentation
+└── scripts/              # Helper scripts for initializing infra, CI/CD, etc.
+```
 
 
 ---
