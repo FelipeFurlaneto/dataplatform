@@ -4,7 +4,7 @@
 
 This project is all about building a **flexible, modular platform** for running **MLOps workloads** and backend services in Go, all on-premises. The idea is to provide a setup where infrastructure, data services, ML tools, pipelines, and APIs all work together in a **scalable and reproducible** way.
 
-It should run in an Oracle Cloud as it has a better experience for free users. But just a kind reminder that I would choose Azure and get some services as ADLS, Azure SQL Databases, MongoDB and maybe Databricks/Fabric (optionally).
+It should run in an Oracle Cloud as it has a better experience for free users. But just a kind reminder that I would choose Azure and get some services as ADLS, Azure SQL Databases, MongoDB and maybe Databricks/Fabric (optionally). Anyways, this architecture only requires K8S and it's cloud-agnostic.
 
 ### Main Components
 
@@ -24,7 +24,7 @@ It should run in an Oracle Cloud as it has a better experience for free users. B
 ---
 
 ## Folder Layout
-
+```
 data-platform/
 ├── infra/ # Core infrastructure and configuration
 │ ├── terraform/ # Cluster, networking, and storage definitions
@@ -55,7 +55,7 @@ data-platform/
 │
 ├── docs/ # Documentation
 └── scripts/ # Helper scripts for initializing infra, CI/CD, etc.
-
+```
 
 ---
 
