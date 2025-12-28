@@ -1,2 +1,3 @@
 apps/minio/secret.yaml
 apps/postgres/secret.yaml
+apps/spark/secret.yaml
