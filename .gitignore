@@ -1,2 +1,2 @@
-apps/minio/secrets.yaml
-apps/postgres/secrets.yaml
+apps/minio/secret.yaml
+apps/postgres/secret.yaml
