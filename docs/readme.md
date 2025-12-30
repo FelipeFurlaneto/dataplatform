@@ -11,6 +11,7 @@ It should run in an Oracle Cloud as it has a better experience for free users. B
 - **Airflow** – Handles the orchestration of pipelines, including Spark jobs, MLflow experiments, Feast ingestion, and API tasks.  
   *Note:* The DAGs themselves are stored in a **separate repository**, so they can be versioned and deployed independently.  
 - **Spark** – For batch and streaming data processing.  
+- **Trino** - For OLAP abstraction of Datalake (MinIO).
 - **MLflow** – Tracks experiments and stores registered models.  
 - **Feast** – Manages features both offline and online.  
 - **Seldon** – Deploys and serves ML models.  
@@ -40,6 +41,7 @@ data-platform/
 │   ├── feast/            # Feature store configs
 │   ├── seldon/           # Model serving configs
 │   ├── fastapi/          # Backend APIs
+│   ├── trino/            # OLAP
 │   └── kafka/            # Kafka brokers, connectors, configs
 │
 ├── argocd/               # GitOps setup: ArgoCD projects and apps
@@ -51,6 +53,7 @@ data-platform/
 │       ├── feast.yaml
 │       ├── seldon.yaml
 │       ├── fastapi.yaml
+│       ├── trino.yaml
 │       └── kafka.yaml
 │
 ├── docs/ # Documentation
